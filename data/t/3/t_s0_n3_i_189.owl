@@ -1,0 +1,606 @@
+<rdf:RDF xmlns:ns1="http://purl.org/auto/criticality_phenomena_formalization#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://purl.org/auto/l4_core#" xmlns:ns4="http://www.opengis.net/ont/geosparql#" xmlns:ns5="http://purl.org/auto/physics#" xmlns:ns6="http://purl.org/auto/l4_de#" xmlns:ns7="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="file:t_s0_n3_i_189">
+
+<owl:Ontology rdf:about="http://purl.org/auto/t_s0_n3_i"><owl:imports rdf:resource="http://purl.org/auto/" /><owl:imports rdf:resource="file:t_s0_n3_scenery.owl" /></owl:Ontology><rdf:Description rdf:about="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian">
+  <ns1:is_persistent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:is_persistent>
+  <ns1:is_persistent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:is_persistent>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Criticality_Phenomenon">
+  <ns2:label xml:lang="de">Kritikalit&#228;tsph&#228;nomen</ns2:label>
+  <ns2:label xml:lang="de">Kritikalit&#228;tsph&#228;nomen</ns2:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_crossing1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#bikeway_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#bikeway_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#crossing1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l4_core#vehicle1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l4_core#vehicle2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/auto/l4_core#vehicle3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+</rdf:Description>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry28" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car1" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05153879011031272</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.0</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry30" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car2" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.314297536470588</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">265.8248930260742</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry32" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car3" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03325311223864001</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry34" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car4" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.81070249643865</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1535786180267178</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9885453933880579</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">197.62453138654897</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry36" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car5" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.032159988780223754</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27336197965814474</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.0</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:TCrossingDriver rdf:about="http://purl.org/auto/l4_core#tcrossingdriver6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry38" />
+  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#passenger_car6" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11214744389425928</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns5:has_yaw>
+</ns3:TCrossingDriver>
+
+<ns3:Pedestrian rdf:about="http://purl.org/auto/l4_core#pedestrian1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry45" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6364863815320905</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.35699775756352975</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5171959830760049</ns5:has_length>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.808696821978</ns5:has_yaw>
+</ns3:Pedestrian>
+
+<ns3:Pedestrian rdf:about="http://purl.org/auto/l4_core#pedestrian2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry46" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6499242858512428</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.42057871684809695</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.41643626900482594</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.14505909846276632</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.17561062275337969</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89.71111275317888</ns5:has_yaw>
+</ns3:Pedestrian>
+
+<ns3:Pedestrian rdf:about="http://purl.org/auto/l4_core#pedestrian3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry47" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6366528379806484</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5188920425999672</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4150629056840808</ns5:has_length>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">167.54509407969962</ns5:has_yaw>
+</ns3:Pedestrian>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry27" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8918992945173863</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7214802412351242</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.155637360684304</ns5:has_length>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05153879011031272</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.0</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry29" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5696368525990763</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6655328180745697</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.345830329910341</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.314297536470588</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">265.8248930260742</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry31" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9913927380188265</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.872923876790472</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0252531706812205</ns5:has_length>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03325311223864001</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry33" />
+  <rdf:type>
+    <ns7:Class>
+      <ns7:complementOf>
+        <ns7:Restriction>
+          <ns7:onProperty rdf:resource="http://purl.org/auto/communication#delivers_signal" />
+          <ns7:someValuesFrom rdf:resource="http://purl.org/auto/l6_de#Turn_Signal" />
+        </ns7:Restriction>
+      </ns7:complementOf>
+    </ns7:Class>
+  </rdf:type>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8419919659577206</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.869651486390398</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.264915874130065</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.81070249643865</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1535786180267178</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9885453933880579</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">197.62453138654897</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry35" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6022388747580587</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.792127020462627</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0580983497607965</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.032159988780223754</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27336197965814474</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.0</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#passenger_car6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry37" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7743496519177946</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8415083481039067</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.03024615519598</ns5:has_length>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11214744389425928</ns5:has_speed>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns5:has_yaw>
+</ns6:Passenger_Car>
+
+<ns6:Bicycle rdf:about="http://purl.org/auto/l4_de#bicycle1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:driven_by rdf:resource="http://purl.org/auto/l4_de#tcrossingbicyclist1" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry39" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-18.0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06774649849762084</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2989199323033243</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.42449958784374</ns5:has_yaw>
+</ns6:Bicycle>
+
+<ns6:TCrossingBicyclist rdf:about="http://purl.org/auto/l4_de#tcrossingbicyclist1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry40" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-18.0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06774649849762084</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2989199323033243</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.42449958784374</ns5:has_yaw>
+</ns6:TCrossingBicyclist>
+
+<ns6:Bicycle rdf:about="http://purl.org/auto/l4_de#bicycle2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:driven_by rdf:resource="http://purl.org/auto/l4_de#bicyclist1" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry41" />
+  <rdf:type>
+    <ns7:Class>
+      <ns7:complementOf>
+        <ns7:Restriction>
+          <ns7:onProperty rdf:resource="http://purl.org/auto/communication#delivers_signal" />
+          <ns7:someValuesFrom rdf:resource="http://purl.org/auto/l6_de#Turn_Signal" />
+        </ns7:Restriction>
+      </ns7:complementOf>
+    </ns7:Class>
+  </rdf:type>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0501063317094528</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5420506847274973</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0570095519246954</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04857438101283275</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.46598465039822046</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns6:Bicycle>
+
+<ns6:Bicyclist rdf:about="http://purl.org/auto/l4_de#bicyclist1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry42" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8501063317094528</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04857438101283275</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.46598465039822046</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns6:Bicyclist>
+
+<ns6:Bicycle rdf:about="http://purl.org/auto/l4_de#bicycle3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:driven_by rdf:resource="http://purl.org/auto/l4_de#bicyclist2" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry43" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8764268366009562</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.465040872549478</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0740942464217311</ns5:has_length>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04025072557286404</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.20017524607185258</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns6:Bicycle>
+
+<ns6:Bicyclist rdf:about="http://purl.org/auto/l4_de#bicyclist2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry44" />
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6764268366009563</ns5:has_height>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
+  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
+  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04025072557286404</ns5:has_acceleration>
+  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.20017524607185258</ns5:has_speed>
+  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns5:has_yaw>
+</ns6:Bicyclist>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-52.60059299175449 2.610740120617562, -56.75623035243888 2.610740120617562, -56.75623035243888 0.8892598793824376, -52.60059299175449 0.8892598793824376, -52.60059299175449 2.610740120617562))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-54.67841167209664 1.75)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-2.238388956678148 -11.06024845053055, -2.554786663322596 -15.39454582699172, -0.8936738319940735 -15.5158047634838, -0.577276125349627 -11.18150738702261, -2.238388956678148 -11.06024845053055))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-1.566031394336111 -13.28802660700713)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((52.8181619776419 -2.686461938395236, 56.84341514832326 -2.686461938395236, 56.84341514832326 -0.8135380616047641, 52.8181619776419 -0.8135380616047641, 52.8181619776419 -2.686461938395236))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (54.83078856298259 -1.75)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((6.300805457107942 2.252781555525396, 2.236079958627323 0.9614589639904554, 2.802169249465972 -0.8204331751020363, 6.866894747946587 0.4708894164329063, 6.300805457107942 2.252781555525396))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (4.55148735328695 0.7161741902116776)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-46.37252548756128 2.646063510231313, -50.43062383732212 2.646063510231313, -50.43062383732212 0.8539364897686865, -46.37252548756128 0.8539364897686865, -46.37252548756128 2.646063510231313))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-48.4015746624417 1.75)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-2.67075417405195 -50.5864801280993, -2.67075417405195 -54.61672628329529, -0.8292458259480471 -54.61672628329529, -0.8292458259480471 -50.5864801280993, -2.67075417405195 -50.5864801280993))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-1.749999999999996 -52.60160320569723)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-6.211244982248633 4.450222783909841, -5.211295426579549 4.440178575765742, -5.206273322507483 4.940153353600224, -6.206222878176528 4.95019756174445, -6.211244982248633 4.450222783909841))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-5.708759152378049 4.695188068755082)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-2.875995853143393 -2.021025342363749, -1.818986301218637 -2.021025342363749, -1.818986301218637 -1.478974657636251, -2.875995853143393 -1.478974657636251, -2.875995853143393 -2.021025342363749))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-2.347491077181037 -1.75)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((50.56188818445016 -1.982520436274739, 51.63598243087194 -1.982520436274739, 51.63598243087194 -1.517479563725261, 50.56188818445016 -1.517479563725261, 50.56188818445016 -1.982520436274739))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (51.09893530766102 -1.75)</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((6.579541535964053 -27.23665910841882, 6.5868412160506 -27.7538035752563, 6.943803414208718 -27.74876492548499, 6.936503734122167 -27.23162045864757, 6.579541535964053 -27.23665910841882))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((6.938751206568624 -27.96279829423895, 6.518177835706952 -27.96067773119197, 6.51607815893275 -28.37710870686523, 6.936651529794416 -28.37922926991213, 6.938751206568624 -27.96279829423895))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-32.55519299196609 -4.342200613380808, -32.66710304216794 -4.84888107731975, -32.2618082055733 -4.938398176829211, -32.14989815537133 -4.43171771289029, -32.55519299196609 -4.342200613380808))</ns4:asWKT>
+</ns4:Geometry>
+
+<rdf:Description>
+  <ns7:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ns7:minQualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description>
+  <ns7:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ns7:minQualifiedCardinality>
+</rdf:Description>
+
+
+</rdf:RDF>

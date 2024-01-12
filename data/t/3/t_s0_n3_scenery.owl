@@ -1,0 +1,584 @@
+<rdf:RDF xmlns:ns1="http://purl.org/auto/criticality_phenomena_formalization#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://purl.org/auto/l1_de#" xmlns:ns4="http://www.opengis.net/ont/geosparql#" xmlns:ns5="http://www.w3.org/2002/07/owl#" xmlns:ns6="http://purl.org/auto/physics#" xmlns:ns7="http://purl.org/auto/l1_core#" xmlns:ns8="http://purl.org/auto/l4_core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="file:t_s0_n3_scenery">
+
+<owl:Ontology rdf:about="http://purl.org/auto/t_s0_n3_scenery"><owl:imports rdf:resource="http://purl.org/auto/" /></owl:Ontology><rdf:Description rdf:about="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian">
+  <ns1:is_persistent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:is_persistent>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Criticality_Phenomenon">
+  <ns2:label xml:lang="de">Kritikalit&#228;tsph&#228;nomen</ns2:label>
+</rdf:Description>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry1" />
+  <rdf:type>
+    <ns5:Restriction>
+      <ns5:onProperty rdf:resource="http://purl.org/auto/l1_core#has_lane" />
+      <ns5:onClass rdf:resource="http://purl.org/auto/l1_core#Driveable_Lane" />
+      <ns5:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</ns5:qualifiedCardinality>
+    </ns5:Restriction>
+  </rdf:type>
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</ns6:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8 -6, 58 -6, 58 6, 8 6, 8 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry2" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8 3.5, 58 3.5, 58 6, 8 6, 8 3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry3" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8 0, 58 0, 58 3.5, 8 3.5, 8 0))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry4" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8 -3.5, 58 -3.5, 58 0, 8 0, 8 -3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry5" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8 -6, 58 -6, 58 -3.5, 8 -3.5, 8 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry6" />
+  <rdf:type>
+    <ns5:Restriction>
+      <ns5:onProperty rdf:resource="http://purl.org/auto/l1_core#has_lane" />
+      <ns5:onClass rdf:resource="http://purl.org/auto/l1_core#Driveable_Lane" />
+      <ns5:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</ns5:qualifiedCardinality>
+    </ns5:Restriction>
+  </rdf:type>
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</ns6:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 6, -58 6, -58 -6, -8 -6, -8 6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry7" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 -3.5, -58 -3.5, -58 -6, -8 -6, -8 -3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry8" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 0, -58 0, -58 -3.5, -8 -3.5, -8 0))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry9" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 3.5, -58 3.5, -58 0, -8 0, -8 3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry10" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 6, -58 6, -58 3.5, -8 3.5, -8 6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry11" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</ns6:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 -6, -8 -56, 8 -56, 8 -6, -8 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry12" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((5.5 -6, 5.5 -56, 8 -56, 8 -6, 5.5 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Bikeway_Lane rdf:about="http://purl.org/auto/l1_de#bikeway_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry13" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</ns6:has_width>
+</ns3:Bikeway_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((3.5 -6, 3.5 -56, 5.5 -56, 5.5 -6, 3.5 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry14" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0 -6, 0 -56, 3.5 -56, 3.5 -6, 0 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns7:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry15" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns7:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-3.5 -6, -3.5 -56, 0 -56, 0 -6, -3.5 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Bikeway_Lane rdf:about="http://purl.org/auto/l1_de#bikeway_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry16" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</ns6:has_width>
+</ns3:Bikeway_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-5.5 -6, -5.5 -56, -3.5 -56, -3.5 -6, -5.5 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry17" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#pedestrian_crossing1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 -6, -8 -56, -5.5 -56, -5.5 -6, -8 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Crossing rdf:about="http://purl.org/auto/l1_de#pedestrian_crossing1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry18" />
+  <ns7:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#bikeway_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns6:has_width>
+</ns3:Pedestrian_Crossing>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-11 -3.5, -11 3.5, -14.5 3.5, -14.5 -3.5, -11 -3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Crossing rdf:about="http://purl.org/auto/l1_de#crossing1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry19" />
+  <ns7:connects rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns7:connects rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns7:connects rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.5</ns6:has_width>
+</ns3:Crossing>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 -6, 8 -6, 8 3.5, -8 3.5, -8 -6))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry20" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns6:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8 3.5, 8 3.5, 8 6, -8 6, -8 3.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry21" />
+  <ns7:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.754957149176111 -3.512038183319507, -7.512274194959693 -3.548036798991921, -7.274288306863856 -3.607649160669474, -7.043291419087288 -3.690301168721778, -6.821508157935018 -3.795196839129106, -6.611074417451007 -3.921325969243629, -6.414016789590896 -4.067473866593149, -6.232233047033641 -4.232233047033621, -6.067473866593167 -4.414016789590875, -5.921325969243646 -4.611074417450982, -5.795196839129119 -4.821508157934994, -5.690301168721788 -5.043291419087262, -5.607649160669482 -5.274288306863829, -5.548036798991927 -5.512274194959663, -5.512038183319509 -5.754957149176083, -5.5 -6, -8 -6, -8 -3.5, -7.754957149176111 -3.512038183319507))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry22" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((5.512038183319508 -5.754957149176106, 5.548036798991922 -5.512274194959688, 5.607649160669475 -5.274288306863852, 5.690301168721779 -5.043291419087284, 5.795196839129108 -4.821508157935014, 5.921325969243632 -4.611074417451002, 6.067473866593152 -4.414016789590893, 6.232233047033624 -4.232233047033638, 6.414016789590878 -4.067473866593164, 6.611074417450985 -3.921325969243643, 6.821508157934995 -3.795196839129118, 7.043291419087266 -3.690301168721787, 7.274288306863833 -3.607649160669481, 7.512274194959668 -3.548036798991926, 7.754957149176086 -3.512038183319509, 7.999999999999988 -3.5, 8 -3.5, 8 -6, 5.5 -6, 5.512038183319508 -5.754957149176106))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns8:Vehicle rdf:about="http://purl.org/auto/l4_core#vehicle1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry23" />
+  <ns6:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_yaw_rate>
+  <ns6:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_acceleration>
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</ns6:has_width>
+  <ns6:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_speed>
+  <ns6:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</ns6:has_height>
+  <ns6:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns6:has_yaw>
+</ns8:Vehicle>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-19.1396570481484 -3.225, -23.4396570481484 -3.225, -23.4396570481484 -5.025, -19.1396570481484 -5.025, -19.1396570481484 -3.225))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns8:Vehicle rdf:about="http://purl.org/auto/l4_core#vehicle2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry25" />
+  <ns6:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_yaw_rate>
+  <ns6:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_acceleration>
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</ns6:has_width>
+  <ns6:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_speed>
+  <ns6:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</ns6:has_height>
+  <ns6:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns6:has_yaw>
+</ns8:Vehicle>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-22.07955030002969 -3.85, -26.37955030002969 -3.85, -26.37955030002969 -5.65, -22.07955030002969 -5.65, -22.07955030002969 -3.85))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-33.5505662517513 -3.225, -37.8505662517513 -3.225, -37.8505662517513 -5.025, -33.5505662517513 -5.025, -33.5505662517513 -3.225))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns8:Vehicle rdf:about="http://purl.org/auto/l4_core#vehicle3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry26" />
+  <ns6:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_yaw_rate>
+  <ns6:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_acceleration>
+  <ns6:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</ns6:has_length>
+  <ns6:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</ns6:has_width>
+  <ns6:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns6:has_speed>
+  <ns6:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</ns6:has_height>
+  <ns6:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns6:has_yaw>
+</ns8:Vehicle>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-39.0468304900392 -3.225, -43.3468304900392 -3.225, -43.3468304900392 -5.025, -39.0468304900392 -5.025, -39.0468304900392 -3.225))</ns4:asWKT>
+</ns4:Geometry>
+
+<rdf:Description>
+  <ns5:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ns5:minQualifiedCardinality>
+</rdf:Description>
+
+
+</rdf:RDF>

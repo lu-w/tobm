@@ -1,0 +1,1648 @@
+<rdf:RDF xmlns:ns1="http://purl.org/auto/criticality_phenomena_formalization#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://purl.org/auto/l1_de#" xmlns:ns4="http://www.opengis.net/ont/geosparql#" xmlns:ns5="http://purl.org/auto/physics#" xmlns:ns6="http://purl.org/auto/l1_core#" xmlns:ns7="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="file:x_s0_n1_scenery">
+
+<owl:Ontology rdf:about="http://purl.org/auto/x_s0_n1_scenery"><owl:imports rdf:resource="http://purl.org/auto/" /></owl:Ontology><rdf:Description rdf:about="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian">
+  <ns1:is_persistent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:is_persistent>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Criticality_Phenomenon">
+  <ns2:label xml:lang="de">Kritikalit&#228;tsph&#228;nomen</ns2:label>
+</rdf:Description>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry1" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 -10, 30 -10, 30 10, 10 10, 10 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry2" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 7.5, 30 7.5, 30 10, 10 10, 10 7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry3" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 4, 30 4, 30 7.5, 10 7.5, 10 4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry4" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 0.5, 30 0.5, 30 4, 10 4, 10 0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Divider_Lane rdf:about="http://purl.org/auto/l1_de#divider_lane1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry5" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns5:has_width>
+</ns3:Divider_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 -0.5, 30 -0.5, 30 0.5, 10 0.5, 10 -0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry6" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 -4, 30 -4, 30 -0.5, 10 -0.5, 10 -4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry7" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 -7.5, 30 -7.5, 30 -4, 10 -4, 10 -7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry8" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 -10, 30 -10, 30 -7.5, 10 -7.5, 10 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry9" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((30 4.1, 30 3.9, 10 3.9, 10 4.1, 30 4.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry10" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((30 -3.9, 30 -4.1, 10 -4.1, 10 -3.9, 30 -3.9))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry11" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((14.1 7.500000000000001, 14.5 7.500000000000001, 14.5 4.000000000000001, 14.1 4.000000000000001, 14.1 7.500000000000001))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry12" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((14.1 4, 14.5 4, 14.5 0.4999999999999996, 14.1 0.4999999999999996, 14.1 4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry13" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((13.3 0.5, 13.3 7.5, 11 7.5, 11 0.5, 13.3 0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry14" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((13.3 -7.5, 13.3 -0.5, 11 -0.5, 11 -7.5, 13.3 -7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry15" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((11.3 8.75, 11.29903694533444 8.730396571934088, 11.29615705608065 8.710981935596774, 11.29138806714644 8.691943064549108, 11.28477590650226 8.673463313526982, 11.27638425286967 8.6557206526348, 11.26629392246051 8.63888595339608, 11.25460209067255 8.623121343167272, 11.24142135623731 8.608578643762691, 11.22687865683273 8.595397909327453, 11.21111404660392 8.583706077539491, 11.1942793473652 8.573615747130329, 11.17653668647302 8.565224093497743, 11.15805693545089 8.558611932853559, 11.13901806440323 8.553842943919355, 11.11960342806591 8.55096305466556, 11.1 8.550000000000001, 11.08039657193409 8.55096305466556, 11.06098193559678 8.553842943919355, 11.04194306454911 8.558611932853559, 11.02346331352698 8.565224093497742, 11.0057206526348 8.573615747130329, 10.98888595339608 8.583706077539491, 10.97312134316727 8.595397909327453, 10.95857864376269 8.608578643762691, 10.94539790932745 8.62312134316727, 10.93370607753949 8.638885953396079, 10.92361574713033 8.6557206526348, 10.91522409349774 8.673463313526982, 10.90861193285356 8.691943064549108, 10.90384294391935 8.710981935596774, 10.90096305466556 8.730396571934087, 10.9 8.75, 10.90096305466556 8.769603428065912, 10.90384294391935 8.789018064403225, 10.90861193285356 8.808056935450892, 10.91522409349774 8.826536686473018, 10.92361574713033 8.844279347365198, 10.93370607753949 8.86111404660392, 10.94539790932745 8.876878656832728, 10.95857864376269 8.891421356237309, 10.97312134316727 8.904602090672547, 10.98888595339608 8.916293922460509, 11.0057206526348 8.926384252869671, 11.02346331352698 8.934775906502257, 11.04194306454911 8.941388067146441, 11.06098193559677 8.946157056080645, 11.08039657193409 8.94903694533444, 11.1 8.949999999999999, 11.11960342806591 8.94903694533444, 11.13901806440322 8.946157056080647, 11.15805693545089 8.941388067146441, 11.17653668647302 8.934775906502258, 11.1942793473652 8.926384252869671, 11.21111404660392 8.916293922460509, 11.22687865683273 8.904602090672547, 11.24142135623731 8.891421356237311, 11.25460209067255 8.87687865683273, 11.26629392246051 8.861114046603921, 11.27638425286967 8.8442793473652, 11.28477590650226 8.82653668647302, 11.29138806714644 8.808056935450894, 11.29615705608065 8.789018064403226, 11.29903694533444 8.769603428065913, 11.3 8.75))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry16" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((11.3 0, 11.29903694533444 -0.0196034280659121, 11.29615705608065 -0.03901806440322562, 11.29138806714644 -0.05805693545089242, 11.28477590650226 -0.07653668647301788, 11.27638425286967 -0.09427934736519944, 11.26629392246051 -0.1111140466039204, 11.25460209067255 -0.126878656832729, 11.24142135623731 -0.1414213562373094, 11.22687865683273 -0.1546020906725473, 11.21111404660392 -0.1662939224605089, 11.1942793473652 -0.1763842528696709, 11.17653668647302 -0.1847759065022573, 11.15805693545089 -0.1913880671464417, 11.13901806440323 -0.196157056080646, 11.11960342806591 -0.1990369453344394, 11.1 -0.2, 11.08039657193409 -0.1990369453344394, 11.06098193559678 -0.1961570560806462, 11.04194306454911 -0.1913880671464419, 11.02346331352698 -0.1847759065022575, 11.0057206526348 -0.1763842528696712, 10.98888595339608 -0.1662939224605093, 10.97312134316727 -0.1546020906725477, 10.95857864376269 -0.1414213562373098, 10.94539790932745 -0.1268786568327295, 10.93370607753949 -0.1111140466039209, 10.92361574713033 -0.09427934736520005, 10.91522409349774 -0.07653668647301848, 10.90861193285356 -0.05805693545089307, 10.90384294391935 -0.03901806440322625, 10.90096305466556 -0.01960342806591278, 10.9 -6.462178297730347e-16, 10.90096305466556 0.0196034280659115, 10.90384294391935 0.03901806440322497, 10.90861193285356 0.05805693545089183, 10.91522409349774 0.07653668647301727, 10.92361574713033 0.0942793473651989, 10.93370607753949 0.1111140466039198, 10.94539790932745 0.1268786568327285, 10.95857864376269 0.1414213562373089, 10.97312134316727 0.1546020906725469, 10.98888595339608 0.1662939224605086, 11.0057206526348 0.1763842528696706, 11.02346331352698 0.1847759065022571, 11.04194306454911 0.1913880671464415, 11.06098193559677 0.1961570560806459, 11.08039657193409 0.1990369453344393, 11.1 0.2, 11.11960342806591 0.1990369453344395, 11.13901806440322 0.1961570560806463, 11.15805693545089 0.1913880671464421, 11.17653668647302 0.1847759065022578, 11.1942793473652 0.1763842528696715, 11.21111404660392 0.1662939224605097, 11.22687865683273 0.154602090672548, 11.24142135623731 0.1414213562373103, 11.25460209067255 0.12687865683273, 11.26629392246051 0.1111140466039215, 11.27638425286967 0.09427934736520054, 11.28477590650226 0.07653668647301907, 11.29138806714644 0.05805693545089369, 11.29615705608065 0.03901806440322697, 11.29903694533444 0.01960342806591334, 11.3 0))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry17" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 10, 10 30, -10 30, -10 10, 10 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry18" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.5 10, -7.5 30, -10 30, -10 10, -7.5 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry19" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-4 10, -4 30, -7.5 30, -7.5 10, -4 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry20" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-0.5 10, -0.5 30, -4 30, -4 10, -0.5 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Divider_Lane rdf:about="http://purl.org/auto/l1_de#divider_lane2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry21" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns5:has_width>
+</ns3:Divider_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0.5 10, 0.5 30, -0.5 30, -0.5 10, 0.5 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry22" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4 10, 4 30, 0.5 30, 0.5 10, 4 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry23" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((7.5 10, 7.5 30, 4 30, 4 10, 7.5 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry24" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((10 10, 10 30, 7.5 30, 7.5 10, 10 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry25" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-4.1 30, -3.9 30, -3.9 10, -4.1 10, -4.1 30))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry26" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((3.9 30, 4.1 30, 4.1 10, 3.9 10, 3.9 30))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry27" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.500000000000001 14.1, -7.500000000000001 14.5, -4.000000000000001 14.5, -4.000000000000001 14.1, -7.500000000000001 14.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry28" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-4 14.1, -4 14.5, -0.4999999999999996 14.5, -0.4999999999999996 14.1, -4 14.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry29" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-0.5000000000000018 13.3, -7.500000000000002 13.3, -7.500000000000002 11, -0.5000000000000018 11, -0.5000000000000018 13.3))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry30" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((7.499999999999998 13.3, 0.4999999999999982 13.3, 0.4999999999999982 11, 7.499999999999998 11, 7.499999999999998 13.3))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry31" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-8.550000000000001 11.1, -8.55096305466556 11.08039657193409, -8.553842943919355 11.06098193559677, -8.558611932853559 11.04194306454911, -8.565224093497743 11.02346331352698, -8.573615747130329 11.0057206526348, -8.583706077539491 10.98888595339608, -8.595397909327453 10.97312134316727, -8.608578643762691 10.95857864376269, -8.62312134316727 10.94539790932745, -8.638885953396079 10.93370607753949, -8.6557206526348 10.92361574713033, -8.673463313526982 10.91522409349774, -8.691943064549108 10.90861193285356, -8.710981935596774 10.90384294391935, -8.730396571934088 10.90096305466556, -8.75 10.9, -8.769603428065912 10.90096305466556, -8.789018064403225 10.90384294391935, -8.808056935450892 10.90861193285356, -8.826536686473018 10.91522409349774, -8.8442793473652 10.92361574713033, -8.86111404660392 10.93370607753949, -8.876878656832728 10.94539790932745, -8.891421356237309 10.95857864376269, -8.904602090672547 10.97312134316727, -8.916293922460509 10.98888595339608, -8.926384252869671 11.0057206526348, -8.934775906502257 11.02346331352698, -8.941388067146441 11.04194306454911, -8.946157056080645 11.06098193559677, -8.94903694533444 11.08039657193409, -8.949999999999999 11.1, -8.94903694533444 11.11960342806591, -8.946157056080645 11.13901806440322, -8.941388067146441 11.15805693545089, -8.934775906502258 11.17653668647302, -8.926384252869671 11.1942793473652, -8.916293922460509 11.21111404660392, -8.904602090672547 11.22687865683273, -8.891421356237309 11.24142135623731, -8.87687865683273 11.25460209067255, -8.861114046603921 11.26629392246051, -8.8442793473652 11.27638425286967, -8.826536686473018 11.28477590650226, -8.808056935450894 11.29138806714644, -8.789018064403226 11.29615705608065, -8.769603428065913 11.29903694533444, -8.750000000000002 11.3, -8.730396571934088 11.29903694533444, -8.710981935596775 11.29615705608065, -8.691943064549108 11.29138806714644, -8.673463313526984 11.28477590650226, -8.655720652634802 11.27638425286967, -8.63888595339608 11.26629392246051, -8.623121343167272 11.25460209067255, -8.608578643762691 11.24142135623731, -8.595397909327453 11.22687865683273, -8.583706077539492 11.21111404660392, -8.573615747130329 11.1942793473652, -8.565224093497743 11.17653668647302, -8.558611932853559 11.15805693545089, -8.553842943919355 11.13901806440323, -8.55096305466556 11.11960342806591, -8.550000000000001 11.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry32" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0.2 11.1, 0.1990369453344394 11.08039657193409, 0.1961570560806461 11.06098193559677, 0.1913880671464418 11.04194306454911, 0.1847759065022574 11.02346331352698, 0.1763842528696711 11.0057206526348, 0.1662939224605091 10.98888595339608, 0.1546020906725475 10.97312134316727, 0.1414213562373096 10.95857864376269, 0.1268786568327293 10.94539790932745, 0.1111140466039206 10.93370607753949, 0.09427934736519972 10.92361574713033, 0.07653668647301817 10.91522409349774, 0.05805693545089272 10.90861193285356, 0.03901806440322593 10.90384294391935, 0.01960342806591242 10.90096305466556, 3.231089148865174e-16 10.9, -0.01960342806591178 10.90096305466556, -0.0390180644032253 10.90384294391935, -0.05805693545089211 10.90861193285356, -0.07653668647301758 10.91522409349774, -0.09427934736519915 10.92361574713033, -0.1111140466039201 10.93370607753949, -0.1268786568327287 10.94539790932745, -0.1414213562373092 10.95857864376269, -0.1546020906725471 10.97312134316727, -0.1662939224605088 10.98888595339608, -0.1763842528696707 11.0057206526348, -0.1847759065022572 11.02346331352698, -0.1913880671464416 11.04194306454911, -0.196157056080646 11.06098193559677, -0.1990369453344393 11.08039657193409, -0.2 11.1, -0.1990369453344394 11.11960342806591, -0.1961570560806462 11.13901806440322, -0.191388067146442 11.15805693545089, -0.1847759065022576 11.17653668647302, -0.1763842528696714 11.1942793473652, -0.1662939224605095 11.21111404660392, -0.1546020906725479 11.22687865683273, -0.1414213562373101 11.24142135623731, -0.1268786568327297 11.25460209067255, -0.1111140466039212 11.26629392246051, -0.09427934736520037 11.27638425286967, -0.07653668647301873 11.28477590650226, -0.05805693545089333 11.29138806714644, -0.03901806440322661 11.29615705608065, -0.01960342806591315 11.29903694533444, -9.249178236745459e-16 11.3, 0.01960342806591113 11.29903694533444, 0.03901806440322461 11.29615705608065, 0.05805693545089157 11.29138806714644, 0.07653668647301702 11.28477590650226, 0.09427934736519858 11.27638425286967, 0.1111140466039195 11.26629392246051, 0.1268786568327283 11.25460209067255, 0.1414213562373087 11.24142135623731, 0.1546020906725467 11.22687865683273, 0.1662939224605084 11.21111404660392, 0.1763842528696705 11.1942793473652, 0.1847759065022569 11.17653668647302, 0.1913880671464414 11.15805693545089, 0.1961570560806458 11.13901806440323, 0.1990369453344393 11.11960342806591, 0.2 11.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry33" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 10, -30 10, -30 -10, -10 -10, -10 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry34" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -7.5, -30 -7.5, -30 -10, -10 -10, -10 -7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry35" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -4, -30 -4, -30 -7.5, -10 -7.5, -10 -4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry36" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -0.5, -30 -0.5, -30 -4, -10 -4, -10 -0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Divider_Lane rdf:about="http://purl.org/auto/l1_de#divider_lane3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry37" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns5:has_width>
+</ns3:Divider_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 0.5, -30 0.5, -30 -0.5, -10 -0.5, -10 0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry38" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 4, -30 4, -30 0.5, -10 0.5, -10 4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry39" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 7.5, -30 7.5, -30 4, -10 4, -10 7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry40" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 10, -30 10, -30 7.5, -10 7.5, -10 10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry41" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-30 -4.1, -30 -3.9, -10 -3.9, -10 -4.1, -30 -4.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry42" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-30 3.9, -30 4.1, -10 4.1, -10 3.9, -30 3.9))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry43" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-14.1 -7.500000000000001, -14.5 -7.500000000000001, -14.5 -4.000000000000001, -14.1 -4.000000000000001, -14.1 -7.500000000000001))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry44" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-14.1 -4, -14.5 -4, -14.5 -0.4999999999999996, -14.1 -0.4999999999999996, -14.1 -4))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry45" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-13.3 -0.5, -13.3 -7.5, -11 -7.5, -11 -0.5, -13.3 -0.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry46" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-13.3 7.5, -13.3 0.5, -11 0.5, -11 7.5, -13.3 7.5))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry47" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10.9 -8.75, -10.90096305466556 -8.769603428065912, -10.90384294391935 -8.789018064403226, -10.90861193285356 -8.808056935450892, -10.91522409349774 -8.826536686473018, -10.92361574713033 -8.8442793473652, -10.93370607753949 -8.86111404660392, -10.94539790932745 -8.876878656832728, -10.95857864376269 -8.891421356237309, -10.97312134316727 -8.904602090672547, -10.98888595339608 -8.916293922460509, -11.0057206526348 -8.926384252869671, -11.02346331352698 -8.934775906502257, -11.04194306454911 -8.941388067146441, -11.06098193559677 -8.946157056080645, -11.08039657193409 -8.94903694533444, -11.1 -8.949999999999999, -11.11960342806591 -8.94903694533444, -11.13901806440322 -8.946157056080645, -11.15805693545089 -8.941388067146441, -11.17653668647302 -8.934775906502258, -11.1942793473652 -8.926384252869671, -11.21111404660392 -8.916293922460509, -11.22687865683273 -8.904602090672547, -11.24142135623731 -8.891421356237309, -11.25460209067255 -8.87687865683273, -11.26629392246051 -8.861114046603921, -11.27638425286967 -8.8442793473652, -11.28477590650226 -8.826536686473018, -11.29138806714644 -8.808056935450892, -11.29615705608065 -8.789018064403226, -11.29903694533444 -8.769603428065913, -11.3 -8.75, -11.29903694533444 -8.730396571934088, -11.29615705608065 -8.710981935596775, -11.29138806714644 -8.691943064549108, -11.28477590650226 -8.673463313526982, -11.27638425286967 -8.655720652634802, -11.26629392246051 -8.63888595339608, -11.25460209067255 -8.623121343167272, -11.24142135623731 -8.608578643762691, -11.22687865683273 -8.595397909327453, -11.21111404660392 -8.583706077539491, -11.1942793473652 -8.573615747130329, -11.17653668647302 -8.565224093497743, -11.15805693545089 -8.558611932853559, -11.13901806440323 -8.553842943919355, -11.11960342806591 -8.55096305466556, -11.1 -8.550000000000001, -11.08039657193409 -8.55096305466556, -11.06098193559678 -8.553842943919353, -11.04194306454911 -8.558611932853559, -11.02346331352698 -8.565224093497742, -11.0057206526348 -8.573615747130329, -10.98888595339608 -8.583706077539491, -10.97312134316727 -8.595397909327453, -10.95857864376269 -8.608578643762689, -10.94539790932745 -8.62312134316727, -10.93370607753949 -8.638885953396079, -10.92361574713033 -8.6557206526348, -10.91522409349774 -8.67346331352698, -10.90861193285356 -8.691943064549106, -10.90384294391935 -8.710981935596774, -10.90096305466556 -8.730396571934087, -10.9 -8.75))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry48" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10.9 0, -10.90096305466556 -0.0196034280659121, -10.90384294391935 -0.03901806440322562, -10.90861193285356 -0.05805693545089242, -10.91522409349774 -0.07653668647301788, -10.92361574713033 -0.09427934736519944, -10.93370607753949 -0.1111140466039204, -10.94539790932745 -0.126878656832729, -10.95857864376269 -0.1414213562373094, -10.97312134316727 -0.1546020906725473, -10.98888595339608 -0.1662939224605089, -11.0057206526348 -0.1763842528696709, -11.02346331352698 -0.1847759065022573, -11.04194306454911 -0.1913880671464417, -11.06098193559677 -0.196157056080646, -11.08039657193409 -0.1990369453344394, -11.1 -0.2, -11.11960342806591 -0.1990369453344394, -11.13901806440322 -0.1961570560806462, -11.15805693545089 -0.1913880671464419, -11.17653668647302 -0.1847759065022575, -11.1942793473652 -0.1763842528696712, -11.21111404660392 -0.1662939224605093, -11.22687865683273 -0.1546020906725477, -11.24142135623731 -0.1414213562373098, -11.25460209067255 -0.1268786568327295, -11.26629392246051 -0.1111140466039209, -11.27638425286967 -0.09427934736520005, -11.28477590650226 -0.07653668647301848, -11.29138806714644 -0.05805693545089307, -11.29615705608065 -0.03901806440322625, -11.29903694533444 -0.01960342806591278, -11.3 -6.462178297730347e-16, -11.29903694533444 0.0196034280659115, -11.29615705608065 0.03901806440322497, -11.29138806714644 0.05805693545089183, -11.28477590650226 0.07653668647301727, -11.27638425286967 0.0942793473651989, -11.26629392246051 0.1111140466039198, -11.25460209067255 0.1268786568327285, -11.24142135623731 0.1414213562373089, -11.22687865683273 0.1546020906725469, -11.21111404660392 0.1662939224605086, -11.1942793473652 0.1763842528696706, -11.17653668647302 0.1847759065022571, -11.15805693545089 0.1913880671464415, -11.13901806440323 0.1961570560806459, -11.11960342806591 0.1990369453344393, -11.1 0.2, -11.08039657193409 0.1990369453344395, -11.06098193559678 0.1961570560806463, -11.04194306454911 0.1913880671464421, -11.02346331352698 0.1847759065022578, -11.0057206526348 0.1763842528696715, -10.98888595339608 0.1662939224605097, -10.97312134316727 0.154602090672548, -10.95857864376269 0.1414213562373103, -10.94539790932745 0.12687865683273, -10.93370607753949 0.1111140466039215, -10.92361574713033 0.09427934736520054, -10.91522409349774 0.07653668647301907, -10.90861193285356 0.05805693545089369, -10.90384294391935 0.03901806440322697, -10.90096305466556 0.01960342806591334, -10.9 0))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Urban_Road rdf:about="http://purl.org/auto/l1_de#urban_road4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry49" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_width>
+</ns3:Urban_Road>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -10, -10 -30, 10 -30, 10 -10, -10 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry50" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((7.5 -10, 7.5 -30, 10 -30, 10 -10, 7.5 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry51" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4 -10, 4 -30, 7.5 -30, 7.5 -10, 4 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry52" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0.5 -10, 0.5 -30, 4 -30, 4 -10, 0.5 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Divider_Lane rdf:about="http://purl.org/auto/l1_de#divider_lane4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry53" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns5:has_width>
+</ns3:Divider_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-0.5 -10, -0.5 -30, 0.5 -30, 0.5 -10, -0.5 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry54" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-4 -10, -4 -30, -0.5 -30, -0.5 -10, -4 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns6:Driveable_Lane rdf:about="http://purl.org/auto/l1_core#driveable_lane16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry55" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_width>
+</ns6:Driveable_Lane>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.5 -10, -7.5 -30, -4 -30, -4 -10, -7.5 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry56" />
+  <ns6:has_road rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:is_lane_left_of rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:is_lane_right_of rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:is_lane_parallel_to rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</ns5:has_width>
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -10, -10 -30, -7.5 -30, -7.5 -10, -10 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry57" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4.1 -30, 3.9 -30, 3.9 -10, 4.1 -10, 4.1 -30))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Line_Marker rdf:about="http://purl.org/auto/l1_de#line_marker8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry58" />
+</ns3:Line_Marker>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-3.9 -30, -4.1 -30, -4.1 -10, -3.9 -10, -3.9 -30))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry59" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((7.500000000000001 -14.1, 7.500000000000001 -14.5, 4.000000000000001 -14.5, 4.000000000000001 -14.1, 7.500000000000001 -14.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Wait_Line rdf:about="http://purl.org/auto/l1_de#wait_line8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry60" />
+</ns3:Wait_Line>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4 -14.1, 4 -14.5, 0.4999999999999996 -14.5, 0.4999999999999996 -14.1, 4 -14.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry61" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0.4999999999999982 -13.3, 7.499999999999998 -13.3, 7.499999999999998 -11, 0.4999999999999982 -11, 0.4999999999999982 -13.3))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Pedestrian_Ford rdf:about="http://purl.org/auto/l1_de#pedestrian_ford8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry62" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</ns5:has_width>
+</ns3:Pedestrian_Ford>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry62">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.500000000000002 -13.3, -0.5000000000000018 -13.3, -0.5000000000000018 -11, -7.500000000000002 -11, -7.500000000000002 -13.3))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry63" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry63">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((8.949999999999999 -11.1, 8.94903694533444 -11.11960342806591, 8.946157056080645 -11.13901806440323, 8.941388067146441 -11.15805693545089, 8.934775906502257 -11.17653668647302, 8.926384252869671 -11.1942793473652, 8.916293922460509 -11.21111404660392, 8.904602090672547 -11.22687865683273, 8.891421356237309 -11.24142135623731, 8.87687865683273 -11.25460209067255, 8.861114046603921 -11.26629392246051, 8.8442793473652 -11.27638425286967, 8.826536686473018 -11.28477590650226, 8.808056935450892 -11.29138806714644, 8.789018064403226 -11.29615705608065, 8.769603428065912 -11.29903694533444, 8.75 -11.3, 8.730396571934088 -11.29903694533444, 8.710981935596775 -11.29615705608065, 8.691943064549108 -11.29138806714644, 8.673463313526982 -11.28477590650226, 8.6557206526348 -11.27638425286967, 8.63888595339608 -11.26629392246051, 8.623121343167272 -11.25460209067255, 8.608578643762691 -11.24142135623731, 8.595397909327453 -11.22687865683273, 8.583706077539491 -11.21111404660392, 8.573615747130329 -11.1942793473652, 8.565224093497743 -11.17653668647302, 8.558611932853559 -11.15805693545089, 8.553842943919355 -11.13901806440323, 8.55096305466556 -11.11960342806591, 8.550000000000001 -11.1, 8.55096305466556 -11.08039657193409, 8.553842943919355 -11.06098193559678, 8.558611932853559 -11.04194306454911, 8.565224093497742 -11.02346331352698, 8.573615747130329 -11.0057206526348, 8.583706077539491 -10.98888595339608, 8.595397909327453 -10.97312134316727, 8.608578643762691 -10.95857864376269, 8.62312134316727 -10.94539790932745, 8.638885953396079 -10.93370607753949, 8.6557206526348 -10.92361574713033, 8.673463313526982 -10.91522409349774, 8.691943064549106 -10.90861193285356, 8.710981935596774 -10.90384294391935, 8.730396571934087 -10.90096305466556, 8.749999999999998 -10.9, 8.769603428065912 -10.90096305466556, 8.789018064403225 -10.90384294391935, 8.808056935450892 -10.90861193285356, 8.826536686473016 -10.91522409349774, 8.844279347365198 -10.92361574713033, 8.86111404660392 -10.93370607753949, 8.876878656832728 -10.94539790932745, 8.891421356237309 -10.95857864376269, 8.904602090672547 -10.97312134316727, 8.916293922460508 -10.98888595339608, 8.926384252869671 -11.0057206526348, 8.934775906502257 -11.02346331352698, 8.941388067146441 -11.04194306454911, 8.946157056080645 -11.06098193559677, 8.94903694533444 -11.08039657193409, 8.949999999999999 -11.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Vehicle_Traffic_Light rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <rdf:type rdf:resource="http://purl.org/auto/l1_de#Broken_Light_Sign" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry64" />
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_width>
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</ns5:has_length>
+  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</ns5:has_height>
+</ns3:Vehicle_Traffic_Light>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry64">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((0.2 -11.1, 0.1990369453344394 -11.11960342806591, 0.1961570560806461 -11.13901806440323, 0.1913880671464418 -11.15805693545089, 0.1847759065022574 -11.17653668647302, 0.1763842528696711 -11.1942793473652, 0.1662939224605091 -11.21111404660392, 0.1546020906725475 -11.22687865683273, 0.1414213562373096 -11.24142135623731, 0.1268786568327293 -11.25460209067255, 0.1111140466039206 -11.26629392246051, 0.09427934736519972 -11.27638425286967, 0.07653668647301817 -11.28477590650226, 0.05805693545089272 -11.29138806714644, 0.03901806440322593 -11.29615705608065, 0.01960342806591242 -11.29903694533444, 3.231089148865174e-16 -11.3, -0.01960342806591178 -11.29903694533444, -0.0390180644032253 -11.29615705608065, -0.05805693545089211 -11.29138806714644, -0.07653668647301758 -11.28477590650226, -0.09427934736519915 -11.27638425286967, -0.1111140466039201 -11.26629392246051, -0.1268786568327287 -11.25460209067255, -0.1414213562373092 -11.24142135623731, -0.1546020906725471 -11.22687865683273, -0.1662939224605088 -11.21111404660392, -0.1763842528696707 -11.1942793473652, -0.1847759065022572 -11.17653668647302, -0.1913880671464416 -11.15805693545089, -0.196157056080646 -11.13901806440323, -0.1990369453344393 -11.11960342806591, -0.2 -11.1, -0.1990369453344394 -11.08039657193409, -0.1961570560806462 -11.06098193559678, -0.191388067146442 -11.04194306454911, -0.1847759065022576 -11.02346331352698, -0.1763842528696714 -11.0057206526348, -0.1662939224605095 -10.98888595339608, -0.1546020906725479 -10.97312134316727, -0.1414213562373101 -10.95857864376269, -0.1268786568327297 -10.94539790932745, -0.1111140466039212 -10.93370607753949, -0.09427934736520037 -10.92361574713033, -0.07653668647301873 -10.91522409349774, -0.05805693545089333 -10.90861193285356, -0.03901806440322661 -10.90384294391935, -0.01960342806591315 -10.90096305466556, -9.249178236745459e-16 -10.9, 0.01960342806591113 -10.90096305466556, 0.03901806440322461 -10.90384294391935, 0.05805693545089157 -10.90861193285356, 0.07653668647301702 -10.91522409349774, 0.09427934736519858 -10.92361574713033, 0.1111140466039195 -10.93370607753949, 0.1268786568327283 -10.94539790932745, 0.1414213562373087 -10.95857864376269, 0.1546020906725467 -10.97312134316727, 0.1662939224605084 -10.98888595339608, 0.1763842528696705 -11.0057206526348, 0.1847759065022569 -11.02346331352698, 0.1913880671464414 -11.04194306454911, 0.1961570560806458 -11.06098193559677, 0.1990369453344393 -11.08039657193409, 0.2 -11.1))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Crossing rdf:about="http://purl.org/auto/l1_de#crossing1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry65" />
+  <ns6:connects rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns6:connects rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns6:connects rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns6:connects rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_length>
+  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns5:has_width>
+</ns3:Crossing>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry65">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-10 -10, 10 -10, 10 10, -10 10, -10 -10))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry66" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry66">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((7.512038183319508 -9.754957149176107, 7.548036798991922 -9.512274194959687, 7.607649160669475 -9.274288306863852, 7.690301168721779 -9.043291419087284, 7.795196839129108 -8.821508157935014, 7.921325969243632 -8.611074417451002, 8.067473866593151 -8.414016789590894, 8.232233047033624 -8.232233047033638, 8.414016789590878 -8.067473866593165, 8.611074417450986 -7.921325969243643, 8.821508157934996 -7.795196839129118, 9.043291419087266 -7.690301168721787, 9.274288306863834 -7.607649160669482, 9.512274194959668 -7.548036798991927, 9.754957149176086 -7.512038183319509, 9.999999999999988 -7.5, 10 -7.500000000000001, 10 -10, 7.5 -10, 7.512038183319508 -9.754957149176107))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry67" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry67">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((9.754957149176104 7.512038183319508, 9.512274194959684 7.548036798991923, 9.274288306863848 7.607649160669476, 9.04329141908728 7.690301168721781, 8.821508157935011 7.79519683912911, 8.611074417450999 7.921325969243634, 8.414016789590891 8.067473866593154, 8.232233047033635 8.232233047033628, 8.067473866593161 8.414016789590882, 7.92132596924364 8.61107441745099, 7.795196839129115 8.821508157935, 7.690301168721786 9.04329141908727, 7.60764916066948 9.274288306863836, 7.548036798991925 9.512274194959671, 7.512038183319508 9.754957149176089, 7.5 9.999999999999991, 7.5 10, 10 10, 10 7.5, 9.754957149176104 7.512038183319508))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry68" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry68">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-7.512038183319508 9.754957149176098, -7.548036798991923 9.51227419495968, -7.607649160669478 9.274288306863845, -7.690301168721783 9.043291419087277, -7.795196839129112 8.821508157935007, -7.921325969243636 8.611074417450995, -8.067473866593156 8.414016789590887, -8.232233047033629 8.232233047033633, -8.414016789590885 8.06747386659316, -8.611074417450993 7.921325969243638, -8.821508157935003 7.795196839129114, -9.043291419087273 7.690301168721785, -9.274288306863841 7.607649160669479, -9.512274194959677 7.548036798991925, -9.754957149176095 7.512038183319508, -9.999999999999996 7.5, -10 7.5, -10 10, -7.5 10, -7.512038183319508 9.754957149176098))</ns4:asWKT>
+</ns4:Geometry>
+
+<ns3:Walkway rdf:about="http://purl.org/auto/l1_de#walkway12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry69" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns6:has_successor_lane rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+</ns3:Walkway>
+
+<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry69">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-9.754957149176111 -7.512038183319507, -9.512274194959693 -7.548036798991921, -9.274288306863856 -7.607649160669474, -9.043291419087288 -7.690301168721778, -8.821508157935018 -7.795196839129106, -8.611074417451007 -7.921325969243629, -8.414016789590896 -8.067473866593149, -8.232233047033642 -8.23223304703362, -8.067473866593167 -8.414016789590875, -7.921325969243646 -8.611074417450981, -7.795196839129119 -8.821508157934993, -7.690301168721788 -9.043291419087261, -7.607649160669482 -9.274288306863829, -7.548036798991927 -9.512274194959662, -7.512038183319509 -9.754957149176084, -7.5 -10, -10 -10, -10 -7.500000000000001, -9.754957149176111 -7.512038183319507))</ns4:asWKT>
+</ns4:Geometry>
+
+<rdf:Description>
+  <ns7:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ns7:minQualifiedCardinality>
+</rdf:Description>
+
+
+</rdf:RDF>

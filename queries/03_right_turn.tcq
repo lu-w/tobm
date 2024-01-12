@@ -1,0 +1,10 @@
+# Right turn
+
+PREFIX l1c: <http://purl.org/auto/l1_core#>
+PREFIX l1d: <http://purl.org/auto/l1_de#>
+PREFIX l4c: <http://purl.org/auto/l4_core#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+F (((l4c:Vehicle(?x) ^ l1c:Driveable_Lane(l1) ^ geo:sfIntersects(l1, ?x) ^ l1d:is_lane_right_of(?l2,l1)))
+	&
+F (geo:sfIntersects(?x, ?l2)))

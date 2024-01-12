@@ -1,0 +1,12 @@
+# Intersecting vulnerable road user
+
+PREFIX l4c: <http://purl.org/auto/l4_core#>
+PREFIX l4d: <http://purl.org/auto/l4_de#>
+PREFIX phy: <http://purl.org/auto/physics#>
+
+G (l4c:Vehicle(?x) ^ l4d:Vulnerable_Road_User(?v))
+	&
+F
+(
+	(phy:is_in_proximity(?x,?v)) U_[5,10] (phy:has_intersecting_path(?x,?v))
+)

@@ -1,0 +1,22 @@
+# Lane change without a signal
+
+PREFIX l1c: <http://purl.org/auto/l1_core#>
+PREFIX l1d: <http://purl.org/auto/l1_de#>
+PREFIX l4c: <http://purl.org/auto/l4_core#>
+PREFIX l6d: <http://purl.org/auto/l6_de#>
+PREFIX com: <http://purl.org/auto/communication#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+G (l4c:Vehicle(?x) ^ l1c:Driveable_Lane(?l1) ^ l1c:Driveable_Lane(?l2))
+	&
+F
+(
+	(geo:sfWithin(?x,?l1))
+		&
+	X[!]
+	(
+		(!(com:delivers_signal(?x,s) ^ l6d:Left_Turn_Signal(s)))
+			U
+		(geo:sfIntersects(?x,?l2))
+	)
+)

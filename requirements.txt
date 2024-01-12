@@ -1,0 +1,4 @@
+numpy
+sympy
+owlready2==0.40
+./pyauto

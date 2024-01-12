@@ -1,0 +1,3 @@
+[submodule "pyauto"]
+	path = pyauto
+	url = https://github.com/lu-w/pyauto.git
