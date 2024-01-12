@@ -12,7 +12,7 @@ It is based on [`pyauto`](https://github.com/lu-w/pyauto) and the
 
 TOBM produces randomized (`S`), scalable (`N`) traffic scenarios represented in A.U.T.O on an X-crossing and T-crossing setting.
 
-![TOBM T-crossing for N=4 and S=0](videos/tobm_t_t4_s0_small.gif)
+![TOBM T-crossing for N=4 and S=0](videos/tobm_t_n4_s0_small.gif)
 ![TOBM X-crossing for N=4 and S=0](videos/tobm_x_n4_s0_small.gif)
 
 For `N = 1..5` and `S = 0`, pre-computed data is already available in the [data](data) folder.
