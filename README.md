@@ -19,7 +19,7 @@ TOBM produces randomized (`S`), scalable (`N`) traffic scenarios represented in 
   <img src="videos/tobm_x_n4_s0_small.gif" />
 </p>
 
-For `N = 1..5` and `S = 0`, pre-computed data is already available in the [data](data) folder.
+For `N = 1..5` and `S = 0`, pre-computed data are already available in the [data](data) folder.
 
 ### Queries
 
