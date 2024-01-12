@@ -1,12 +1,35 @@
 # The Traffic Ontology Benchmark (TOBM)
 
-TOBM is a generator for temporal knowledge bases in the setting of scenario-based safeguarding of automated driving 
-systems. A temporal knowledge base consists of a list of standard knowledge bases, as defined by OWL2.
+TOBM is a generator for temporal knowledge bases in the setting of scenario-based safeguarding of automated driving systems. 
+The benchmark task is to answer four provided queries on the temporal knowledge bases produced by TOBM.
+A temporal knowledge base consists of a list of standard knowledge bases, as defined by OWL2.
 It is based on [`pyauto`](https://github.com/lu-w/pyauto) and the 
-[Automotive Urban Traffic Ontology (A.U.T.O.)](https://github.com/lu-w/auto/), both are available in the `pyauto` folder.
+[Automotive Urban Traffic Ontology (A.U.T.O.)](https://github.com/lu-w/auto/).
 
-TOBM is takes both a seed S and a scaling parameter N as inputs.
-It generates scenarios (i.e., measurement samples of traffic happenings of finite duration) from two settings:
+## Artifacts
+
+### Data
+
+TOBM produces randomized (`S`), scalable (`N`) traffic scenarios represented in A.U.T.O on an X-crossing and T-crossing setting.
+
+![TOBM T-crossing for N=4 and S=0](videos/tobm_t_t4_s0_small.gif)
+![TOBM X-crossing for N=4 and S=0](videos/tobm_x_n4_s0_small.gif)
+
+For `N = 1..5` and `S = 0`, pre-computed data is already available in the [data](data) folder.
+
+### Queries
+
+The [query](query) folder contains four metric temporal conjunctive queries that can be evaluated on the data:
+
+1. Intersecting vulnerable road user
+2. Passing of parking vehicles on two-lane roads
+3. Right turn
+4. Lane change without a signal
+
+## Overview
+
+TOBM is takes both a seed `S` and a scaling parameter `N` as inputs.
+It generates scenarios, i.e., measurement samples of traffic happenings of finite duration, from two settings:
 
 1. A T-crossing setup with parking vehicles, a pedestrian crossing, and bikeway lanes, including pedestrians, 
 bicyclists, and passenger cars. It has 8*N+22 individuals. 
@@ -36,13 +59,10 @@ For this, just navigate into the directory and call `pyauto` on the generated `.
 
 ## Functioning
 
-TOBM works by using defining behavior models for pedestrians, bicyclists, and vehicle drivers that operate using the
-simulation functionality of `pyauto`.
-They are mainly defined in `tobm.sim_models.generic`, with some specific parametrization to the benchmark crossings in
-the respective submodules.
+TOBM works by using defining behavior models for pedestrians, bicyclists, and vehicle drivers that operate using the simulation functionality of `pyauto`.
+They are mainly defined in `tobm.sim_models.generic`, with some specific parametrization to the benchmark crossings in the respective submodules.
 The scenarios can be enriched (augmented) using `-e`, which is based on  the `owlready2-augmentator`. 
-It lifts the sampled data from concrete dynamical and geometrical information (e.g., positions, speeds) to abstract 
-concepts and roles (e.g., positional relations).
+It lifts the sampled data from concrete dynamical and geometrical information (e.g., positions, speeds) to abstract concepts and roles (e.g., positional relations).
 
 Note that TOBM may generate accident scenarios sometimes, as simulation models are not perfect.
 In this case, TOBM uses the next seed to generate a new scenario.
