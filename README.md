@@ -8,6 +8,8 @@ It is based on [`pyauto`](https://github.com/lu-w/pyauto) and the
 
 ## Artifacts
 
+**Download**: You can download TOBM from [the latest release](https://github.com/lu-w/tobm/releases/latest).
+
 ### Data
 
 TOBM produces randomized (`S`), scalable (`N`) traffic scenarios represented in A.U.T.O on an X-crossing and T-crossing setting.
