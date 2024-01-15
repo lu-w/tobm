@@ -1,4 +1,4 @@
-<rdf:RDF xmlns:ns1="http://purl.org/auto/criticality_phenomena_formalization#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://purl.org/auto/l4_core#" xmlns:ns4="http://www.opengis.net/ont/geosparql#" xmlns:ns5="http://purl.org/auto/physics#" xmlns:ns6="http://purl.org/auto/l4_de#" xmlns:ns7="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="file:x_s0_n1_i_193">
+<rdf:RDF xmlns:ns1="http://purl.org/auto/criticality_phenomena_formalization#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://www.opengis.net/ont/geosparql#" xmlns:ns4="http://purl.org/auto/physics#" xmlns:ns5="http://purl.org/auto/l4_core#" xmlns:ns6="http://purl.org/auto/l4_de#" xmlns:ns7="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="file:x_s0_n1_i_193">
 
 <owl:Ontology rdf:about="http://purl.org/auto/x_s0_n1_i"><owl:imports rdf:resource="http://purl.org/auto/" /><owl:imports rdf:resource="file:x_s0_n1_scenery.owl" /></owl:Ontology><rdf:Description rdf:about="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian">
   <ns1:is_persistent rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:is_persistent>
@@ -12,6 +12,22 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry1">
@@ -20,6 +36,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry2">
@@ -28,114 +57,537 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#divider_lane1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#divider_lane2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#divider_lane3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#divider_lane4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_core#driveable_lane16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry3">
@@ -164,10 +616,47 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry9">
@@ -176,6 +665,22 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry10">
@@ -184,6 +689,20 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry11">
@@ -192,6 +711,21 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry12">
@@ -200,6 +734,22 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry13">
@@ -208,6 +758,25 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry14">
@@ -216,6 +785,20 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry15">
@@ -224,6 +807,26 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry16">
@@ -232,6 +835,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry17">
@@ -268,10 +884,35 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry25">
@@ -280,6 +921,18 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry26">
@@ -288,6 +941,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry27">
@@ -296,6 +962,20 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry28">
@@ -304,6 +984,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry29">
@@ -312,6 +1005,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry30">
@@ -320,6 +1026,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry31">
@@ -328,6 +1047,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry32">
@@ -336,6 +1068,19 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry33">
@@ -372,10 +1117,37 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#walkway11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry41">
@@ -384,6 +1156,16 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry42">
@@ -392,6 +1174,23 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry43">
@@ -400,6 +1199,25 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry44">
@@ -408,6 +1226,23 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry45">
@@ -416,6 +1251,20 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry46">
@@ -424,6 +1273,25 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry47">
@@ -432,6 +1300,25 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry48">
@@ -440,6 +1327,29 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#urban_road4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry49">
@@ -476,6 +1386,28 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry57">
@@ -484,6 +1416,29 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#line_marker8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry58">
@@ -492,6 +1447,26 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry59">
@@ -500,6 +1475,26 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#wait_line8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry60">
@@ -508,6 +1503,27 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry61">
@@ -516,6 +1532,25 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#pedestrian_ford8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry62">
@@ -524,6 +1559,27 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry63">
@@ -532,6 +1588,29 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#vehicle_traffic_light8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry64">
@@ -540,6 +1619,29 @@
 
 <rdf:Description rdf:about="http://purl.org/auto/l1_de#crossing1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geometry65">
@@ -562,45 +1664,380 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
 </rdf:Description>
 
-<ns3:XCrossingDriver rdf:about="http://purl.org/auto/l4_core#xcrossingdriver1">
+<ns5:XCrossingDriver rdf:about="http://purl.org/auto/l4_core#xcrossingdriver1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
   <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
-  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry71" />
-  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#veh1" />
-  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
-  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
-  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0876658824028503e-05</ns5:has_acceleration>
-  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2415644458668087</ns5:has_speed>
-  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.40138935278486</ns5:has_yaw>
-</ns3:XCrossingDriver>
+  <ns3:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry71" />
+  <ns5:drives rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_width>
+  <ns4:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_yaw_rate>
+  <ns4:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0876658824028503e-05</ns4:has_acceleration>
+  <ns4:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2415644458668087</ns4:has_speed>
+  <ns4:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.40138935278486</ns4:has_yaw>
+</ns5:XCrossingDriver>
 
-<ns3:XCrossingDriver rdf:about="http://purl.org/auto/l4_core#xcrossingdriver2">
+<ns5:XCrossingDriver rdf:about="http://purl.org/auto/l4_core#xcrossingdriver2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
   <rdf:type rdf:resource="http://purl.org/auto/l4_core#Driver" />
-  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry73" />
-  <ns3:drives rdf:resource="http://purl.org/auto/l4_de#veh2" />
-  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_width>
-  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01844515477230152</ns5:has_speed>
-  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
-  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
-  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns5:has_yaw>
-</ns3:XCrossingDriver>
+  <ns3:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry73" />
+  <ns5:drives rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_width>
+  <ns4:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01844515477230152</ns4:has_speed>
+  <ns4:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_acceleration>
+  <ns4:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_yaw_rate>
+  <ns4:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns4:has_yaw>
+</ns5:XCrossingDriver>
 
-<ns3:Pedestrian rdf:about="http://purl.org/auto/l4_core#pedestrian1">
+<ns5:Pedestrian rdf:about="http://purl.org/auto/l4_core#pedestrian1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry74" />
-  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4127351377598815</ns5:has_width>
-  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6023216816628896</ns5:has_length>
-  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8473475986701327</ns5:has_height>
-  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
-  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03304288623439444</ns5:has_acceleration>
-  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6211441889677495</ns5:has_speed>
-  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">357.83514055022516</ns5:has_yaw>
-</ns3:Pedestrian>
+  <ns3:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry74" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#wait_line4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light3" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light4" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns5:has_small_distance rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8473475986701327</ns4:has_height>
+  <ns4:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4127351377598815</ns4:has_width>
+  <ns4:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6023216816628896</ns4:has_length>
+  <ns4:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_yaw_rate>
+  <ns4:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03304288623439444</ns4:has_acceleration>
+  <ns4:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6211441889677495</ns4:has_speed>
+  <ns4:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">357.83514055022516</ns4:has_yaw>
+</ns5:Pedestrian>
 
 <ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#veh1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry70" />
+  <ns3:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry70" />
   <rdf:type>
     <ns7:Class>
       <ns7:complementOf>
@@ -611,51 +2048,287 @@
       </ns7:complementOf>
     </ns7:Class>
   </rdf:type>
-  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8273863208820906</ns5:has_width>
-  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3222109257625245</ns5:has_length>
-  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7102857904154225</ns5:has_height>
-  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
-  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0876658824028503e-05</ns5:has_acceleration>
-  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2415644458668087</ns5:has_speed>
-  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.40138935278486</ns5:has_yaw>
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_in_front_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway10" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_properly_left_of rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#pedestrian1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7102857904154225</ns4:has_height>
+  <ns4:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8273863208820906</ns4:has_width>
+  <ns4:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3222109257625245</ns4:has_length>
+  <ns4:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_yaw_rate>
+  <ns4:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0876658824028503e-05</ns4:has_acceleration>
+  <ns4:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2415644458668087</ns4:has_speed>
+  <ns4:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.40138935278486</ns4:has_yaw>
 </ns6:Passenger_Car>
 
 <ns6:Passenger_Car rdf:about="http://purl.org/auto/l4_de#veh2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry72" />
-  <ns5:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6909938178236783</ns5:has_width>
-  <ns5:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.291899294517386</ns5:has_length>
-  <ns5:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.738298477076178</ns5:has_height>
-  <ns5:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01844515477230152</ns5:has_speed>
-  <ns5:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_acceleration>
-  <ns5:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns5:has_yaw_rate>
-  <ns5:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns5:has_yaw>
+  <ns3:hasGeometry rdf:resource="http://www.opengis.net/ont/geosparql#geometry72" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_behind rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfContains rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane10" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane11" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#urban_road3" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway12" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#walkway9" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker2" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker5" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker6" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns3:sfDisjoint rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane13" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#vehicle_traffic_light8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#pedestrian_ford8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#crossing1" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#walkway8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#wait_line8" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker7" />
+  <ns4:is_in_proximity rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfIntersects rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane14" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_core#driveable_lane16" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#divider_lane4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:is_near rdf:resource="http://purl.org/auto/l1_de#line_marker8" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_core#xcrossingdriver1" />
+  <ns4:is_properly_right_of rdf:resource="http://purl.org/auto/l4_de#veh1" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_core#driveable_lane15" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l1_de#urban_road4" />
+  <ns3:sfWithin rdf:resource="http://purl.org/auto/l4_de#veh2" />
+  <ns4:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.738298477076178</ns4:has_height>
+  <ns4:has_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6909938178236783</ns4:has_width>
+  <ns4:has_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.291899294517386</ns4:has_length>
+  <ns4:has_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01844515477230152</ns4:has_speed>
+  <ns4:has_acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_acceleration>
+  <ns4:has_yaw_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns4:has_yaw_rate>
+  <ns4:has_yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270.0</ns4:has_yaw>
 </ns6:Passenger_Car>
 
-<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry70">
+<ns3:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry70">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4.007239869132873 -6.826446626234029, 8.329214901587656 -6.871603083342599, 8.348306587171027 -5.044316495724616, 4.026331554716259 -4.999160038616044, 4.007239869132873 -6.826446626234029))</ns4:asWKT>
-</ns4:Geometry>
+  <ns3:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((4.007239869132873 -6.826446626234029, 8.329214901587656 -6.871603083342599, 8.348306587171027 -5.044316495724616, 4.026331554716259 -4.999160038616044, 4.007239869132873 -6.826446626234029))</ns3:asWKT>
+</ns3:Geometry>
 
-<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry71">
+<ns3:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry71">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (6.177773228151961 -5.935381560979325)</ns4:asWKT>
-</ns4:Geometry>
+  <ns3:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (6.177773228151961 -5.935381560979325)</ns3:asWKT>
+</ns3:Geometry>
 
-<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry72">
+<ns3:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry72">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-3.095496908911841 -24.55231063378222, -3.095496908911841 -28.84420992829962, -1.404503091088159 -28.84420992829962, -1.404503091088159 -24.55231063378222, -3.095496908911841 -24.55231063378222))</ns4:asWKT>
-</ns4:Geometry>
+  <ns3:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((-3.095496908911841 -24.55231063378222, -3.095496908911841 -28.84420992829962, -1.404503091088159 -28.84420992829962, -1.404503091088159 -24.55231063378222, -3.095496908911841 -24.55231063378222))</ns3:asWKT>
+</ns3:Geometry>
 
-<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry73">
+<ns3:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry73">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-2.25 -26.69826028104092)</ns4:asWKT>
-</ns4:Geometry>
+  <ns3:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINT (-2.25 -26.69826028104092)</ns3:asWKT>
+</ns3:Geometry>
 
-<ns4:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry74">
+<ns3:Geometry rdf:about="http://www.opengis.net/ont/geosparql#geometry74">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
-  <ns4:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((1.235584280414322 17.77112062113673, 1.837476068477361 17.74836795835895, 1.853067111755152 18.16080851566537, 1.251175323692151 18.18356117844306, 1.235584280414322 17.77112062113673))</ns4:asWKT>
-</ns4:Geometry>
+  <ns3:asWKT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POLYGON ((1.235584280414322 17.77112062113673, 1.837476068477361 17.74836795835895, 1.853067111755152 18.16080851566537, 1.251175323692151 18.18356117844306, 1.235584280414322 17.77112062113673))</ns3:asWKT>
+</ns3:Geometry>
 
 <rdf:Description>
   <ns7:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</ns7:minQualifiedCardinality>
